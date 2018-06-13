@@ -7,9 +7,9 @@
 
 export default function() {
   return [
-    { title: 'JavaScript' },
-    { title: 'Python' },
-    { title: 'Ruby' },
-    { title: 'Java' }
-  ]
+    { title: 'JavaScript', pages: 123 },
+    { title: 'Python', pages: 321 },
+    { title: 'Ruby', pages: 808 },
+    { title: 'Java', pages: 415 }
+  ];
 }
