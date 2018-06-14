@@ -42,6 +42,7 @@ class SearchBar extends React.Component {
   }
 }
 
+// connects redux actions to react props
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchWeather }, dispatch);
 }
