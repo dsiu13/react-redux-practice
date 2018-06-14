@@ -8,8 +8,15 @@ export function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},us`;
   const request = axios.get(url);
 
+  console.log('Request', request);
+
   return {
     type: FETCH_WEATHER,
     payload: request
   };
 }
+
+// Redux-Promise Middleware
+// If the payload has a promise, redux-promise stops the action.
+// After the promise resolves, it creates a new action and sends it to reducers
+// Otherwise it goes straight to the reducers
