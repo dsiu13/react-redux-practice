@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import CounterButtons from './counter_btns';
 
 export default class App extends Component {
+
+  addHandler = () => {
+    console.log('Add')
+  }
+
+  minusHandler = () => {
+    console.log('Minus')
+  }
+
+
   render() {
     return (
       <div>
-        <h1>Hello</h1>
-        <CounterButtons />
+        <button onClick={this.minusHandler}>Subtract</button>
+        <button onClick={this.addHandler}>Add</button>
       </div>
     );
   }
